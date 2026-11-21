@@ -1,0 +1,125 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>ANDA ORANG MAKE</title>
+
+    <style>
+      html::-webkit-scrollbar,
+      body::-webkit-scrollbar {
+        display: none;
+      }
+
+      html, body {
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url('https://cdn.phototourl.com/anon/2026-11-21-713355be-e16b-48ea-a867-45a85632b857.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        user-select: none;
+        -webkit-tap-highlight-color: transparent;
+      }
+
+      .arko {
+        position: relative;
+        top: -245px;
+        background-color: lab(0% 0 0 / 0.24313725490196078);
+        width: 200px;
+        height: 60px;
+        padding: 60px;
+        border-radius: 10px;
+        overflow: hidden;
+        border: 2px solid black;
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+        box-shadow: 3px 3px black;
+      }
+
+      /* Efek ARKO hanya aktif jika bukan tombol CLOSE yang ditekan */
+      .arko:active:not(:has(.aguso:active)) {
+        transform: translate(3px, 3px);
+        box-shadow: 1px 1px black;
+      }
+
+      .aguso {
+        position: relative;
+        top: 46px;
+        left: 182px;
+        z-index: 100;
+        background-color: lab(0% 0 0 / 0.21176470588235294);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        color: white;
+        padding: 5px 10px;
+        border: 1.5px solid lab(0% 0 0);
+        border-radius: 10px;
+        cursor: pointer;
+        outline: none;
+        transition: all 0.2s ease;
+      }
+
+      .aguso:active {
+        transform: scale(0.98);
+      }
+      .arkan {
+        position: relative;
+        z-index: 99;
+        object-fit: cover;
+        top: -50px;
+        left: -117px;
+        border-radius: 12px;
+        border: 2px solid black;
+        width: 50px;
+        height: 50px;
+      }
+      .headn {
+        position: relative;
+        top: -112px;
+        left: 10px;
+        font-size: 25px;
+      }
+      .head{
+        position: relative;
+        top: -112px;
+        left: 10px;
+        color: hwb(0 100% 0% / 0.6313725490196078);
+        background-color: lab(0% 0 0 / 0.1411764705882353);
+        width: 88px;
+        padding: 1px;
+        text-align: center;
+        border-radius: 6px;
+        border: 1px solid black;
+        font-size: 13px;
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+      }
+    </style>
+</head>
+
+<body>
+    <div class="arko">
+      <button class="aguso">CLOSE</button>
+      <img src="https://cdn.phototourl.com/anon/2026-11-21-bf3cd742-931c-4d48-9191-889540ed3ffa.jpg"
+      alt="sukiman error" class="arkan">
+      <h1 class="headn">Kenz Sayang</h1>
+      <p class="head">DEVELOPER</p>
+    </div>
+</body>
+</html>
